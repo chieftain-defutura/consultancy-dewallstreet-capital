@@ -1,0 +1,358 @@
+.home_container {
+  position: relative;
+  margin-top: 70px;
+  .background_clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+
+    video {
+      object-fit: cover;
+      height: 100vh;
+      width: 100%;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      height: 100vh;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    }
+  }
+  .home_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 64px;
+    margin-top: 55px;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+    @media (max-width: 645px) {
+      padding: 40px 12px;
+    }
+    .first_content {
+      h3 {
+        font-size: 40px;
+        font-weight: 100;
+        @media (max-width: 645px) {
+          font-size: 34px;
+        }
+        @media (max-width: 450px) {
+          font-size: 28px;
+        }
+      }
+      @media (max-width: 1024px) {
+        text-align: center;
+      }
+
+      .a_to_z_content {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        @media (max-width: 1024px) {
+          justify-content: center;
+        }
+        h1 {
+          font-size: 109px;
+          @media (max-width: 645px) {
+            font-size: 70px;
+          }
+        }
+        img {
+          width: 70px;
+        }
+      }
+      h2 {
+        color: #02d4f8;
+        font-size: 64px;
+        margin-top: -32px;
+        font-family: var(--font-semiBold);
+        @media (max-width: 645px) {
+          font-size: 50px;
+          margin-top: 0px;
+        }
+        @media (max-width: 450px) {
+          font-size: 40px;
+        }
+      }
+      p {
+        color: #fff;
+        margin-top: 44px;
+        line-height: 22px;
+      }
+      .visit_btn {
+        margin-top: 64px;
+        @media (max-width: 1024px) {
+          display: flex;
+          justify-content: center;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 12px 32px;
+          background: transparent;
+          color: #00ce53;
+          outline: none;
+          border: 1px solid #00ce53;
+          cursor: pointer;
+          font-family: var(--font-bold);
+          img {
+            width: 24px;
+          }
+          @media (max-width: 745px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .second_content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+
+      @media (max-width: 1024px) {
+        margin-top: 80px;
+      }
+      @media (max-width: 745px) {
+        display: none;
+      }
+      .hexagonArea {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        @media (max-width: 735px) {
+          flex-wrap: wrap;
+        }
+
+        .background_img {
+          position: relative;
+          margin: 0 3px;
+          img {
+            width: 85px;
+            height: 100px;
+          }
+        }
+
+        .firstHexagon {
+          position: absolute;
+          top: 4px;
+          left: 4px;
+        }
+        .hexagon {
+          clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+          width: 78px;
+          height: 94px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: 0.5s;
+          backdrop-filter: blur(12px);
+
+          h3 {
+            text-align: center;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: var(--font-light);
+            // font-weight: 100;
+            letter-spacing: 1.2px;
+            padding: 0 12px;
+          }
+        }
+      }
+      .hexagon_service {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        transform: translate(62px, -230px);
+        .background_img {
+          margin: 0 3px;
+          position: absolute;
+          right: 0;
+          top: -20%;
+          img {
+            width: 100%;
+            height: 100%;
+            max-height: 200px;
+            max-width: 180px;
+          }
+          .hexagon_add {
+            cursor: pointer;
+            transition: 0.5s;
+            position: absolute;
+            top: 52px;
+            right: 0;
+            text-align: center;
+
+            h3 {
+              font-size: 48px;
+              color: #02d4f8;
+            }
+            p {
+              color: #ffffff;
+              font-size: 16px;
+              font-family: var(--font-medium);
+            }
+          }
+        }
+      }
+    }
+    .hexagon_service_media {
+      display: flex;
+      justify-content: center;
+      margin-top: -30px;
+      @media (min-width: 745px) {
+        display: none;
+      }
+      .background_img {
+        margin: 0 3px;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          max-height: 200px;
+          max-width: 180px;
+        }
+        .hexagon_add {
+          cursor: pointer;
+          transition: 0.5s;
+          position: absolute;
+          top: 43px;
+          left: 40px;
+          text-align: center;
+
+          h3 {
+            font-size: 48px;
+            color: #02d4f8;
+          }
+          p {
+            color: #ffffff;
+            font-size: 16px;
+            font-family: var(--font-medium);
+          }
+        }
+      }
+    }
+  }
+}
+
+.second_hexagon_area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  @media (min-width: 745px) {
+    display: none;
+  }
+  @media (max-width: 645px) {
+    margin-top: 120px;
+  }
+  @media (max-width: 450px) {
+    margin-top: 80px;
+  }
+  @media (max-width: 388px) {
+    margin-top: 40px;
+  }
+
+  .hexagonArea {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @media (max-width: 735px) {
+      flex-wrap: wrap;
+    }
+
+    .background_img {
+      position: relative;
+      margin: 0 3px;
+      img {
+        width: 85px;
+        height: 100px;
+      }
+    }
+
+    .firstHexagon {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+    }
+    .hexagon {
+      clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+      width: 78px;
+      height: 94px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.5s;
+      backdrop-filter: blur(12px);
+
+      h3 {
+        text-align: center;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: var(--font-light);
+        letter-spacing: 1.2px;
+        padding: 0 12px;
+      }
+    }
+  }
+  .grid_content_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 450px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 380px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .media_five {
+    @media (max-width: 450px) {
+      margin-top: 30px;
+    }
+  }
+  .visit_btn_media {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 90px;
+    @media (max-width: 380px) {
+      margin-top: -100px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 32px;
+      background: transparent;
+      color: #00ce53;
+      outline: none;
+      border: 1px solid #00ce53;
+      cursor: pointer;
+      font-family: var(--font-bold);
+      @media (max-width: 380px) {
+        font-size: 14px;
+      }
+      img {
+        width: 24px;
+      }
+      @media (min-width: 745px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.portFolio_wrapper {
+  background: radial-gradient(100% 100% at 50% 0%, #141414 0%, #141414 100%);
+  padding: 64px 96px;
+
+  @media (max-width: 596px) {
+    background: #1e1e1e;
+    padding: 32px 20px;
+  }
+
+  .portFolio_head {
+    p {
+      color: #02d4f8;
+      font-family: var(--font-medium);
+      @media (max-width: 596px) {
+        text-align: center;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .portFolio_flexContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 596px) {
+      display: block;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 54px;
+      letter-spacing: -0.06em;
+      font-weight: 100;
+      @media (max-width: 875px) {
+        font-size: 42px;
+      }
+      @media (max-width: 715px) {
+        font-size: 32px;
+      }
+      @media (max-width: 420px) {
+        font-size: 26px;
+      }
+    }
+    .read_casestudy_btn {
+      @media (max-width: 596px) {
+        margin-top: 24px;
+      }
+    }
+  }
+  .web_development_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 44px;
+    gap: 28px;
+    @media (max-width: 580px) {
+      grid-template-columns: 1fr;
+    }
+
+    .web_development_video video {
+      max-width: 665px;
+      width: 100%;
+      max-height: 374px;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .overflow {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      height: 400px;
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+      .web_development_images {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        .web_development_img_flex {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          img {
+            max-width: 259px;
+            max-height: 150px;
+          }
+        }
+        .web_develop img {
+          max-width: 295px;
+          max-height: 320px;
+        }
+      }
+    }
+  }
+}

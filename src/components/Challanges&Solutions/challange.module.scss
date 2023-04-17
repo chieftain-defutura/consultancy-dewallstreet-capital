@@ -1,0 +1,73 @@
+.challengesandsolutions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 64px 38px;
+  gap: 64px;
+  background: #111111;
+  @media (max-width: 790px) {
+    flex-direction: column;
+  }
+  .challanges_solution {
+    h1 {
+      text-transform: capitalize;
+    }
+    img {
+      padding: 20px 0;
+      width: 100%;
+    }
+    .challanges_solution_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      svg {
+        width: 100%;
+      }
+      .description {
+        padding: 10px;
+        text-transform: capitalize;
+      }
+    }
+    //responsive
+    @media (max-width: 790px) {
+      &:nth-child(1) {
+        h1 {
+          text-align: left;
+        }
+        .challanges_solution_content {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: left;
+          padding-top: 20px;
+          gap: 0;
+          svg {
+            width: 100px;
+          }
+          .description {
+            text-align: left;
+          }
+        }
+      }
+      &:nth-child(2) {
+        h1 {
+          text-align: right;
+        }
+        .challanges_solution_content {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: right;
+          padding-top: 20px;
+          gap: 0;
+          svg {
+            width: 100px;
+          }
+          .description {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

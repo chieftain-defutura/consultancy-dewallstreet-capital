@@ -1,0 +1,126 @@
+.divisions {
+  background-image: url(/assets/images/bg-divisions.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(66px);
+  margin-top: 70px;
+
+  .division_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    gap: 34px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+    backdrop-filter: blur(66px);
+
+    @media (max-width: 880px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .division_header_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+
+      @media (max-width: 880px) {
+        flex-direction: column;
+        text-align: center;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 33px;
+      }
+      span {
+        color: var(--blue);
+      }
+      svg {
+        width: 30%;
+      }
+    }
+    .division_header_content {
+      p {
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .division_card {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 37px 44px;
+    gap: 24px;
+    // background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(66px);
+
+    @media (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: 1000px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 680px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .card {
+      transition: all ease-in 0.5s;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+      .first_layer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 23px 66px;
+        gap: 24px;
+        background: rgba(0, 0, 0, 0.16);
+        backdrop-filter: blur(10px);
+        p {
+          color: #fff;
+
+          margin-top: -20px;
+          text-transform: uppercase;
+        }
+      }
+      .second_layer_parent {
+        padding: 37px 24px;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(17px);
+        .second_layer {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          text-align: left;
+          gap: 4px;
+          cursor: pointer;
+          padding: 0 0 27px;
+
+          &:hover {
+            svg path {
+              stroke: #fff;
+            }
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

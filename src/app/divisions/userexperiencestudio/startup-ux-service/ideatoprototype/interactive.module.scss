@@ -1,0 +1,106 @@
+.inter_active_wrapper {
+  background-image: url("/assets/images/interactive-bg-img.png");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+
+  @media (max-width: 595px) {
+    height: 120vh;
+  }
+  @media (max-width: 460px) {
+    height: 112vh;
+  }
+  @media (max-width: 422px) {
+    height: 106vh;
+  }
+  .inter_active_container {
+    @media (max-width: 525px) {
+      padding: 0 22px;
+    }
+    h1 {
+      font-size: 54px;
+      letter-spacing: -0.06em;
+      text-align: center;
+      font-weight: 100;
+      padding-top: 96px;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      @media (max-width: 875px) {
+        font-size: 42px;
+        padding-top: 72px;
+      }
+      @media (max-width: 715px) {
+        font-size: 32px;
+        padding-top: 52px;
+      }
+      @media (max-width: 420px) {
+        font-size: 26px;
+        padding-top: 48px;
+      }
+    }
+    .inter_active_video {
+      padding-top: 32px;
+      display: flex;
+      justify-content: center;
+      video {
+        max-width: 550px;
+        width: 100%;
+        max-height: 450px;
+        height: 100%;
+      }
+    }
+    .inter_active_flex_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 36px;
+      margin-top: 32px;
+      @media (max-width: 595px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+      }
+      .para_content {
+        h2 {
+          color: #afafaf;
+          font-size: 40px;
+          span {
+            color: #02d4f8;
+          }
+          @media (max-width: 450px) {
+            font-size: 32px;
+          }
+        }
+        p {
+          color: #fff;
+          font-size: 14px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+
+.topButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3d3939;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px rgba(0, 0, 0, 0.1);
+  scroll-behavior: smooth;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  a {
+    img {
+      width: 30px;
+    }
+  }
+}

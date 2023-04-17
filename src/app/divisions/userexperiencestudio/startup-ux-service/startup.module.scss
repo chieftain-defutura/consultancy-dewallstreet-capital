@@ -1,0 +1,244 @@
+.startUp_ux_wrapper {
+  margin-top: 70px;
+  @media (max-width: 400px) {
+    padding: 0 10px;
+  }
+  .startUp_ux_container {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 292px;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+    .first_content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-left: 24px;
+      @media (max-width: 1024px) {
+        display: block;
+        text-align: center;
+      }
+      .ux_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fff;
+        width: 64px;
+        height: 64px;
+        border-radius: 6px;
+        @media (max-width: 1024px) {
+          margin: 0 auto;
+        }
+        @media (max-width: 450px) {
+          width: 54px;
+          height: 54px;
+        }
+        h1 {
+          font-size: 24px;
+          @media (max-width: 450px) {
+            font-size: 20px;
+          }
+        }
+      }
+      h3 {
+        font-size: 32px;
+        color: #f5f5f5;
+        font-weight: 100;
+        @media (max-width: 1024px) {
+          margin-top: 20px;
+        }
+        @media (max-width: 450px) {
+          font-size: 26px;
+        }
+      }
+    }
+    .startup_content {
+      padding: 16px 24px;
+      background: #141414;
+      backdrop-filter: blur(16px);
+      width: 220px;
+      height: 90px;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 2px;
+      }
+    }
+    .startup_content_media {
+      background: #141414;
+      backdrop-filter: blur(16px);
+      width: 330px;
+      padding: 16px 24px;
+      margin: 30px auto;
+      cursor: pointer;
+      h2 {
+        font-family: var(--font-light);
+        font-size: 16px;
+        letter-spacing: 0.12em;
+        text-align: center;
+      }
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
+      @media (max-width: 450px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .second_content {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 12px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+    .girl_img {
+      margin-top: 80px;
+      img {
+        max-width: 276px;
+        width: 100%;
+        object-fit: contain;
+      }
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+    .startup_services_content {
+      .line_code {
+        margin-left: 200px;
+        img {
+          max-width: 782px;
+          width: 100%;
+        }
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+      .IStartUpUxServices {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media (max-width: 1024px) {
+          display: block;
+        }
+        .startup_cards {
+          border: 1px solid #363637;
+          max-width: 356px;
+          width: 100%;
+          max-height: 472px;
+          height: 100%;
+          padding: 25px;
+          @media (max-width: 1024px) {
+            margin: 25px 0;
+          }
+
+          .startup_flexContent {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 17px;
+
+            h3 {
+              color: #02d4f8;
+              font-size: 24px;
+              font-weight: 100;
+              white-space: nowrap;
+            }
+          }
+          .prototype_img img {
+            max-width: 308px;
+            width: 100%;
+          }
+          .prototype_content {
+            h5 {
+              font-size: 20px;
+              color: #eeeeee;
+              font-weight: 100;
+              margin-top: 10px;
+            }
+            p {
+              font-size: 16px;
+              margin-top: 8px;
+            }
+            button {
+              padding: 12px 120px;
+              color: #fff;
+              font-size: 14px;
+              margin-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .media_grid_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .girl_img_media {
+      img {
+        width: 300px;
+        @media (max-width: 685px) {
+          width: 200px;
+        }
+        @media (max-width: 530px) {
+          width: 150px;
+        }
+      }
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+    .vision_btn_media {
+      background: #141414;
+      padding: 12px 32px;
+      text-align: center;
+      margin-right: 50px;
+      @media (max-width: 575px) {
+        margin-right: 20px;
+      }
+      @media (max-width: 500px) {
+        padding: 20px 15px;
+      }
+
+      p {
+        font-size: 16px;
+        @media (max-width: 460px) {
+          font-size: 14px;
+        }
+      }
+      h5 {
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 6px;
+        @media (max-width: 460px) {
+          font-size: 18px;
+        }
+      }
+      button {
+        margin-top: 16px;
+        @media (max-width: 500px) {
+          max-width: 250px;
+          width: 100%;
+        }
+        @media (max-width: 460px) {
+          font-size: 14px;
+          padding: 6px 0px;
+        }
+      }
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+}

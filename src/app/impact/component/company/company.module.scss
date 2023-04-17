@@ -1,0 +1,47 @@
+.company_logos {
+  padding: 32px 48px;
+
+  h4 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.12em;
+    padding-bottom: 44px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: 48px;
+    padding: 0 42px;
+    margin: 0 12px;
+    gap: 20px;
+  }
+  .logo_slider {
+    width: auto;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+
+    .logo_track {
+      animation: slideshow 18s linear infinite;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 100px;
+      width: 250px;
+    }
+  }
+  @keyframes slideshow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
