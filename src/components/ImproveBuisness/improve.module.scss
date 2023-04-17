@@ -1,0 +1,34 @@
+.improve_buisness {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 88px;
+  gap: 64px;
+  background: #141414;
+  @media (max-width: 950px) {
+    padding: 44px 38px;
+    text-align: center;
+  }
+
+  .improve_buisness_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    @media (max-width: 790px) {
+      flex-direction: column;
+    }
+    .details {
+      text-align: center;
+      p {
+        padding: 24px 0px;
+        font-size: 24px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

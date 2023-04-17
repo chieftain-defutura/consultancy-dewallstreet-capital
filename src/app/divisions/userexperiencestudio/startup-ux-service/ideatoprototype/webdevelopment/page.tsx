@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import ChallangeAndSolutions from "@/components/Challanges&Solutions";
+import ImproveBuisness from "@/components/ImproveBuisness";
+import Collaborate from "@/components/Collabrate";
+import LatestNews from "@/components/LatestNews";
 
 const WebDevelopment = () => {
   return (
@@ -30,6 +33,9 @@ const WebDevelopment = () => {
         </video>
       </div>
       <ChallangeAndSolutions />
+      <ImproveBuisness />
+      <Collaborate title="How we collaborate  with you." textAlign="left" />
+      <LatestNews />
     </div>
   );
 };

@@ -39,18 +39,22 @@ const UserExperienceStudio = () => {
                 height={423}
               />
             </div>
-            <div className={styles.services_icons}>
-              <div>
-                <Image
-                  src={"/assets/icons/enterprise.svg"}
-                  alt="enterprise"
-                  width={36}
-                  height={36}
-                />
-                <h3>ENTERPRISE</h3>
-                <h3>UX SERVICES</h3>
+            <Link
+              href={"/divisions/userexperiencestudio/enterprise-ux-service"}
+            >
+              <div className={styles.services_icons}>
+                <div>
+                  <Image
+                    src={"/assets/icons/enterprise.svg"}
+                    alt="enterprise"
+                    width={36}
+                    height={36}
+                  />
+                  <h3>ENTERPRISE</h3>
+                  <h3>UX SERVICES</h3>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 
@@ -94,16 +98,20 @@ const UserExperienceStudio = () => {
             />
           </div>
           <div className={styles.content_one}>
-            <div>
-              <Image
-                src={"/assets/icons/enterprise.svg"}
-                alt="enterprise"
-                width={20}
-                height={20}
-              />
-              <h3>ENTERPRISE</h3>
-              <h3>UX SERVICES</h3>
-            </div>
+            <Link
+              href={"/divisions/userexperiencestudio/enterprise-ux-service"}
+            >
+              <div>
+                <Image
+                  src={"/assets/icons/enterprise.svg"}
+                  alt="enterprise"
+                  width={20}
+                  height={20}
+                />
+                <h3>ENTERPRISE</h3>
+                <h3>UX SERVICES</h3>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

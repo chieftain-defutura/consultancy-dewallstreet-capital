@@ -10,11 +10,14 @@ const ChallangeAndSolutions = () => {
         {ChallengesAndSolutionsData.map((f) => (
           <div className={styles.challanges_solution}>
             <h1>{f.title}.</h1>
-            <Image src={f.image} alt="challange" width={600} height={380} />
+            <div>
+              <Image src={f.image} alt="challange" width={600} height={320} />
+            </div>
             {f.content.map((f) => (
               <div className={styles.challanges_solution_content}>
-                <Image src={f.icon} alt="icon" width={64} height={60} />
-
+                <div className={styles.chalange_icon}>
+                  <Image src={f.icon} alt="icon" width={64} height={60} />
+                </div>
                 <div className={styles.description}>
                   <h2>{f.heading}</h2>
                   <p>{f.description}</p>
