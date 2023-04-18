@@ -22,18 +22,20 @@ const DivisionsCard = () => {
             </div>
             <div className={styles.second_layer_parent}>
               {f.content.map((f, i) => (
-                <Link href={f.path}>
-                  <div key={i} className={styles.second_layer}>
-                    <Image
-                      src={"/assets/icons/arrow-right.svg"}
-                      alt="icon"
-                      width={20}
-                      height={20}
-                    />
+                <div key={i}>
+                  <Link href={f.path}>
+                    <div className={styles.second_layer}>
+                      <Image
+                        src={"/assets/icons/arrow-right.svg"}
+                        alt="icon"
+                        width={20}
+                        height={20}
+                      />
 
-                    <p>{f.title}</p>
-                  </div>
-                </Link>
+                      <p>{f.title}</p>
+                    </div>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
