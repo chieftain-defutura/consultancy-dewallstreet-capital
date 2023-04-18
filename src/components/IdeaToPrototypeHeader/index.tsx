@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import styles from "./IdeaToPrototypeHeader.module.scss";
+import styles from "./ideaToPrototypeHeader.module.scss";
 import Image from "next/image";
 import Button from "../Button/Button";
 

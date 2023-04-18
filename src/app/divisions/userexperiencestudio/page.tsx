@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./userExperience.module.scss";
+import styles from "./userexperience.module.scss";
 import Link from "next/link";
 import classnames from "classnames";
 
