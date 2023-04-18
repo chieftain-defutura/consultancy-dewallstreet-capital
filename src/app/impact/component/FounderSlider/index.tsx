@@ -26,7 +26,7 @@ const Founder = () => {
   }, []);
 
   return (
-    <div className={styles.founderContainer}>
+    <motion.div drag="x" className={styles.founderContainer}>
       {Data.map((f, index) => {
         return (
           <motion.div
@@ -50,7 +50,7 @@ const Founder = () => {
           </motion.div>
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 
