@@ -121,18 +121,17 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.appoinment}>
-                  <div>
-                    <h4>Schedule an appointment </h4>
-
-                    <div className={styles.search}>
-                      <input type="search" placeholder="Your email" />
-                      <Image
-                        src={"/assets/icons/arrow-right-footer.svg"}
-                        alt="rigtarrow"
-                        width={32}
-                        height={32}
-                      />
+                  <div className={styles.schedule}>
+                    <div className={styles.schedule_wrapper}>
+                      <h1>Schedule an </h1>
+                      <h1>appointment</h1>
                     </div>
+                    <Image
+                      src={"/assets/icons/arrow-right-footer.svg"}
+                      alt="rigtarrow"
+                      width={32}
+                      height={32}
+                    />
                   </div>
                   <div className={styles.follow}>
                     <h5>Follow Us On</h5>

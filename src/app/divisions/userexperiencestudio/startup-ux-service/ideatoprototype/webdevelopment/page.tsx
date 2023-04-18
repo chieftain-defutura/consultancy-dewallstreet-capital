@@ -9,12 +9,12 @@ const WebDevelopment = () => {
   return (
     <div>
       <div className="webdevelopment-hero" style={{ marginTop: "71px" }}>
-        <Image
+        {/* <Image
           src={"/assets/icons/logo-dark.svg"}
           alt="Logodark"
           width={200}
           height={40}
-        />
+        /> */}
         <video
           autoPlay
           muted

@@ -1,7 +1,7 @@
 .user_experience_wrapper {
   text-align: center;
   margin-top: 90px;
-  height: calc(100vh);
+  // height: calc(100vh);
   @media (max-width: 725px) {
     margin-top: 50px;
   }
@@ -126,6 +126,13 @@
     transition: 0.5s ease-in;
     text-align: center;
     margin-left: 58px;
+    @media (max-width: 480px) {
+      width: 144px;
+      height: 144px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
     svg path {
       fill: #fff;
     }

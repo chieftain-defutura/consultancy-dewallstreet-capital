@@ -1,6 +1,6 @@
 .footer {
   background: #0a0a0a;
-  padding: 32px 78px;
+  padding: 32px 98px;
   @media (max-width: 720px) {
     padding: 24px 38px;
   }
@@ -9,6 +9,7 @@
   }
   .footer_wrap {
     display: flex;
+    justify-content: space-evenly;
     @media (max-width: 720px) {
       display: flex;
       flex-direction: column;
@@ -22,11 +23,11 @@
       border-right: 1px solid rgba(238, 238, 238, 0.1);
       @media (max-width: 720px) {
         border-right: none;
-        padding-right: 4px;
+        padding-right: 40px;
         align-items: center;
       }
       @media (max-width: 480px) {
-        padding-right: 1px;
+        padding-right: 20px;
         border-right: none;
       }
       .address_deteials {
@@ -40,6 +41,7 @@
         }
         p {
           line-height: 20px;
+          color: rgba(170, 170, 170, 1);
           @media (max-width: 480px) {
             font-size: 12px;
             line-height: 22px;
@@ -58,19 +60,16 @@
       flex-direction: row;
       width: 100%;
       justify-content: space-between;
-      gap: 60px;
+      // gap: 60px;
       border-bottom: 1px solid rgba(238, 238, 238, 0.1);
-      margin-left: 64px;
+      // margin-left: 64px;
+
       li {
-        font-size: 14px;
-        padding-top: 16px;
+        font-size: 16px;
+        padding: 16px 16px 0 16px;
         font-family: var(--font-light);
         color: #aaaaaa;
         list-style: none;
-        @media (max-width: 480px) {
-          font-size: 12px;
-          padding: 8px 0;
-        }
       }
       @media (max-width: 720px) {
         display: flex;
@@ -87,6 +86,7 @@
         font-size: 20px;
         color: #f5f5f5;
         font-weight: 500;
+        padding-bottom: 12px;
         @media (max-width: 480px) {
           font-size: 12px;
         }
@@ -109,6 +109,7 @@
           }
           h5 {
             font-size: 16px;
+            padding-bottom: 4px;
           }
           .medias {
             display: block;
@@ -188,72 +189,73 @@
           }
         }
       }
-      .search {
+      .schedule {
         display: flex;
-        justify-items: center;
         align-items: center;
-        gap: 12px;
-        padding: 12px 0;
-
-        @media (max-width: 486px) {
-          border-bottom: 1px solid rgba(20, 20, 20, 1);
-          img {
-            width: 42px;
-            height: 42px;
-          }
+        gap: 24px;
+        h1 {
+          font-size: 32px;
+          font-weight: 600;
         }
-
-        input {
-          background: transparent;
-          color: rgba(170, 170, 170, 0.3);
-          border: 1px solid rgba(170, 170, 170, 0.3);
-          padding: 8px 68px 8px 12px;
-          border-radius: 24px;
-          width: 100%;
-          cursor: pointer;
-          transition: 0.5s;
-          @media (max-width: 786px) {
-            padding: 16px 84px 16px 16px;
-            width: 100%;
+        @media (max-width: 480px) {
+          gap: 8px;
+          border-bottom: 2px solid rgba(20, 20, 20, 1);
+          padding-bottom: 24px;
+          br {
+            display: none;
+          }
+          .schedule_wrapper {
+            display: flex;
+          }
+          h1 {
+            font-size: 22px;
           }
         }
       }
     }
-    .connect {
+  }
+  .connect {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 12px;
+    gap: 80px;
+    // margin-left: 64px;
+    h5 {
+      font-size: 14px;
+      color: #8c8c8c;
+      font-weight: 400;
+    }
+    p {
+      color: #8c8c8c;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    @media (max-width: 720px) {
       display: flex;
-      justify-content: space-evenly;
-      padding: 24px;
+      flex-direction: column;
+      align-items: center;
       h5 {
         font-size: 14px;
         color: #8c8c8c;
         font-weight: 400;
+        padding-bottom: 12px;
       }
-      @media (max-width: 720px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h5 {
-          font-size: 14px;
-          color: #8c8c8c;
-          font-weight: 400;
-          padding-bottom: 12px;
-        }
-        p {
-          font-size: 16px;
-          font-weight: 400;
-        }
+      p {
+        font-size: 16px;
+        font-weight: 400;
       }
-      @media (max-width: 480px) {
-        h5 {
-          font-size: 10px;
-          color: #8c8c8c;
-          font-weight: 400;
-          padding-bottom: 8px;
-        }
-        p {
-          font-size: 12px;
-          font-weight: 400;
-        }
+    }
+    @media (max-width: 490px) {
+      gap: 10px;
+      h5 {
+        font-size: 10px;
+        color: #8c8c8c;
+        font-weight: 400;
+        padding-bottom: 8px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
       }
     }
   }

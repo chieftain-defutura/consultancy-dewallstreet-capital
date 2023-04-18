@@ -1,15 +1,18 @@
 .idea_protoType_wrapper {
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(22px);
+  background: rgba(20, 20, 20, 1);
+  // backdrop-filter: blur(22px);
   padding: 0 32px;
   margin-top: 70px;
-  position: relative;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
   @media (max-width: 490px) {
     padding: 0 18px;
   }
   .idea_protoType_container {
     display: flex;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(20, 20, 20, 1);
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -152,6 +155,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: scroll;
+    ::-webkit-scrollbar {
+      display: none;
+    }
     padding: 32px 0;
     @media (min-width: 894px) {
       display: none;

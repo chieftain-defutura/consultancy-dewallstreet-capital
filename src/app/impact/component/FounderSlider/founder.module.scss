@@ -4,6 +4,7 @@
 }
 .slider {
   padding-left: 42px;
+  position: absolute;
   h5 {
     font-size: 20px;
     font-weight: 600;
@@ -69,4 +70,12 @@
       letter-spacing: 1px;
     }
   }
+}
+
+.founderContainer {
+  display: flex;
+  width: 400px;
+  aspect-ratio: 1;
+  // background-color: red;
+  position: relative;
 }

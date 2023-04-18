@@ -32,7 +32,7 @@ const IdeaToProtoType = () => {
   return (
     <>
       <IdeaToPrototypeHeader />
-      <div className={styles.inter_active_wrapper} id={styles.over_view}>
+      <div className={styles.inter_active_wrapper} id="over-view">
         <div>
           <div className={styles.inter_active_container}>
             <h1>
@@ -76,7 +76,7 @@ const IdeaToProtoType = () => {
           </div>
         </div>
       </div>
-      <ApprochOurProject />
+      {/* <ApprochOurProject /> */}
       <Portfolio />
       <Collaborate
         title="You’re one step away from making your ideas into reality."

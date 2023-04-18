@@ -1,74 +1,55 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Data } from "./impact";
 import styles from "./founder.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import Slider from "react-slick";
+import { motion } from "framer-motion";
+
 import Button from "@/components/Button/Button";
 
 const Founder = () => {
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   autoplay: true,
-  //   autoplayspeed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  // };
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-  return (
-    // <Slider {...settings}>
-    //   {Data.map((f, index) => {
-    //     return (
-    //       <div className={styles.slider} key={index}>
-    //         <h5>{f.heading}</h5>
-    //         <div className={styles.founder}>
-    //           <Image src={f.image} alt="" />
-    //           <div>
-    //             <h4>{f.name}</h4>
-    //             <h6>{f.position}</h6>
-    //           </div>
-    //         </div>
-    //         <p>{f.discription}</p>
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    //         <Link href={"/webdevelopment"}>
-    //           <Button varient="primary">Read casestudy</Button>
-    //         </Link>
-    //       </div>
-    //     );
-    //   })}
-    // </Slider>
-    <div>
-      <h2> Single Item</h2>
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentIndex === Data.length - 1) {
+        setCurrentIndex(0);
+        return;
+      }
+      setCurrentIndex((c) => c + 1);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return (
+    <div className={styles.founderContainer}>
+      {Data.map((f, index) => {
+        return (
+          <motion.div
+            style={{ display: index === currentIndex ? "block" : "none" }}
+            className={styles.slider}
+            key={index}
+          >
+            <h5>{f.heading}</h5>
+            <div className={styles.founder}>
+              <Image src={f.image} alt="anthony" width={98} height={98} />
+              <div>
+                <h4>{f.name}</h4>
+                <h6>{f.position}</h6>
+              </div>
+            </div>
+            <p>{f.discription}</p>
+
+            <Link href={"/webdevelopment"}>
+              <Button varient="primary">Read casestudy</Button>
+            </Link>
+          </motion.div>
+        );
+      })}
     </div>
   );
 };

@@ -11,7 +11,10 @@ const IdeaToPrototypeHeader = () => {
         <div className={styles.mx}>
           <div className={styles.idea_protoType_container}>
             <div className={styles.idea_flex_content}>
-              <Link href={"/start-up"} style={{ color: "#fff" }}>
+              <Link
+                href={"/divisions/userexperiencestudio/startup-ux-service/"}
+                style={{ color: "#fff" }}
+              >
                 <div className={styles.ux_content}>
                   <div>
                     <Image
@@ -39,7 +42,7 @@ const IdeaToPrototypeHeader = () => {
 
             <ul className={styles.navigation}>
               <li>
-                <a href="#over-view">OVER VIEW</a>
+                <Link href="#over-view">OVER VIEW</Link>
               </li>
               <li>
                 <a href="#approach">APPROACH</a>
