@@ -39,21 +39,21 @@ const Header = () => {
             {openClose && (
               <div className={styles.menu_section}>
                 <div
-                  className="closeIcon"
+                  className={styles.closeIcon}
                   onClick={() => setOpenClose(!openClose)}
                 >
                   <Image src={Close} alt="close_icon" width={24} height={24} />
                 </div>
-                <li>
+                <li onClick={() => setOpenClose(!openClose)}>
                   <Link href={"/"}>Home</Link>
                 </li>
-                <li>
+                <li onClick={() => setOpenClose(!openClose)}>
                   <Link href={"/divisions"}>Divisions</Link>
                 </li>
-                <li>
+                <li onClick={() => setOpenClose(!openClose)}>
                   <Link href={"/impact"}>Impact</Link>
                 </li>
-                <li>
+                <li onClick={() => setOpenClose(!openClose)}>
                   <Link href={"/access"}>Access</Link>
                 </li>
               </div>

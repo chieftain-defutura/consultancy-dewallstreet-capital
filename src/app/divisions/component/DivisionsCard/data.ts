@@ -3,19 +3,22 @@ export const DivisionsData = [
     icons: "/assets/icons/manager-consultant.svg",
     title: "BUREAUS",
     content: [
-      { title: "PRIVATE EQUITY BUREAU", path: "private equity bureau" },
+      {
+        title: "PRIVATE EQUITY BUREAU",
+        path: "divisions/private-equity-bureau",
+      },
       {
         title: "STRATEGIC TRANSACTIONS BUREAU",
-        path: "strategic-transactions-bureau",
+        path: "divisions/strategic-transiction-bureau",
       },
-      { title: "DUE DILIGENCE BUREAU", path: "due diligence bureau" },
+      { title: "DUE DILIGENCE BUREAU", path: "divisions/due-diligence-bureau" },
       {
         title: "REGULATORY COMPLIANCE BUREAU",
-        path: "regulatory-compliance-bureau",
+        path: "divisions/regulatory-compliance-bureau",
       },
       {
         title: "TREASURY MANAGEMENT BUREAU",
-        path: "treasury-management-bureau",
+        path: "divisions/treasury-management-bureau",
       },
     ],
   },
@@ -25,11 +28,11 @@ export const DivisionsData = [
     content: [
       {
         title: "BRAND DIFFUSION STUDIO",
-        path: "brand-diffusion-studio",
+        path: "divisions/brand-diffusion-studio",
       },
       {
         title: "STRATEGIC CAMPAIGN STUDIO",
-        path: "strategic-campaign-studio",
+        path: "divisions/strategic-campaign-studio",
       },
       {
         title: "USER EXPERIENCE STUDIO",
@@ -37,12 +40,12 @@ export const DivisionsData = [
       },
       {
         title: "PUBLIC RELATIONS STUDIO",
-        path: "public-relations-studio",
+        path: "divisions/public-relation-studio",
       },
 
       {
         title: "VIRTUAL WORLDS STUDIO",
-        path: "virtual-worlds-studio",
+        path: "divisions/virtual-world-studio",
       },
     ],
   },
@@ -52,23 +55,23 @@ export const DivisionsData = [
     content: [
       {
         title: "DIGITAL TRANSFORMATION LAB",
-        path: "digital-transformation-lab",
+        path: "divisions/digital-transformation-lab",
       },
       {
         title: "DISTRIBUTED LEDGERS LAB",
-        path: "distributed-ledgers-lab",
+        path: "divisions/distributed-ledgers-lab",
       },
       {
         title: "EXTENDED REALITY LAB",
-        path: "extended-reality-lab",
+        path: "divisions/extended-reality-lab",
       },
       {
         title: "ARTIFICAL INTELLIGENCE LAB",
-        path: "artificial-intelligence-lab",
+        path: "divisions/artifficial-intelligence-lab",
       },
       {
         title: "CYBER SECURITY LAB",
-        path: "cyber-security-lab",
+        path: "divisions/cyber-security-lab",
       },
     ],
   },
@@ -78,19 +81,19 @@ export const DivisionsData = [
     content: [
       {
         title: "HUMAN CAPITAL BOARD",
-        path: "human-capital-board",
+        path: "divisions/human-capital-board",
       },
       {
         title: "WORKFORCE TRANSFORMATION BOARD",
-        path: "workforce-transformation-board",
+        path: "divisions/workforce-transformation-board",
       },
       {
         title: "OPERATIONAL EFFICACY BOARD",
-        path: "operational-efficacy-board",
+        path: "divisions/oprational-efficacy-board",
       },
       {
         title: "SYSTEMATIC GOVERNANCE BOARD",
-        path: "systematic-governance-board",
+        path: "divisions/systematic-governance-board",
       },
       {
         title: "BUSINESS APPROACH BOARD",

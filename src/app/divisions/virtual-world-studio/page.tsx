@@ -1,6 +1,6 @@
 import React from "react";
 
-const PrivateEquityBureau = () => {
+const VirtualWorld = () => {
   return (
     <div>
       <h1>Comming Soon</h1>
@@ -8,4 +8,4 @@ const PrivateEquityBureau = () => {
   );
 };
 
-export default PrivateEquityBureau;
+export default VirtualWorld;

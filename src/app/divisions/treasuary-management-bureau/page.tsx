@@ -1,6 +1,6 @@
 import React from "react";
 
-const SystamaticGovernance = () => {
+const TreasuryManagement = () => {
   return (
     <div>
       <h1>Comming Soon..</h1>
@@ -8,4 +8,4 @@ const SystamaticGovernance = () => {
   );
 };
 
-export default SystamaticGovernance;
+export default TreasuryManagement;
