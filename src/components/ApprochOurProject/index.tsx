@@ -213,7 +213,10 @@ const ApprochOurProject = () => {
                   <Slider ref={ref} {...settings}>
                     {IProduction.map((f, index) => {
                       return (
-                        <div className={styles.approachOur_flex_content}>
+                        <div
+                          key={index}
+                          className={styles.approachOur_flex_content}
+                        >
                           <div className={styles.approachOur_img}>
                             <Image
                               src={f.image.src}
@@ -261,7 +264,10 @@ const ApprochOurProject = () => {
                   <Slider ref={ref} {...settings}>
                     {IPostProduction.map((f, index) => {
                       return (
-                        <div className={styles.approachOur_flex_content}>
+                        <div
+                          key={index}
+                          className={styles.approachOur_flex_content}
+                        >
                           <div className={styles.approachOur_img}>
                             <Image
                               src={f.image.src}
@@ -304,7 +310,10 @@ const ApprochOurProject = () => {
                   <Slider ref={ref} {...settings}>
                     {IPostProduction.map((f, index) => {
                       return (
-                        <div className={styles.approachOur_flex_content}>
+                        <div
+                          key={index}
+                          className={styles.approachOur_flex_content}
+                        >
                           <div className={styles.approachOur_img}>
                             <Image
                               src={f.image.src}

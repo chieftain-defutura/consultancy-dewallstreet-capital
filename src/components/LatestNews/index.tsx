@@ -11,7 +11,7 @@ const LatestNews = () => {
       <h1>Latest NEWS.</h1>
       <div className={styles.latest_news_divisions}>
         {LatestNewsData.map((f, i) => (
-          <div className={styles.latest_news_columns}>
+          <div key={i} className={styles.latest_news_columns}>
             <div className={styles.first_column}>
               <Image
                 src={f.firstImage}
