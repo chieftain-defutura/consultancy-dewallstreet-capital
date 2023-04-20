@@ -76,3 +76,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+.slick-list {
+  width: 400px;
+}

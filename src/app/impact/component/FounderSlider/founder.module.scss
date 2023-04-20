@@ -1,33 +1,48 @@
-.slick-slider {
-  width: 100%;
-  overflow: hidden;
-}
 .slider {
-  padding-left: 42px;
-  position: absolute;
+  padding: 0 40px;
+  width: 100%;
+
   h5 {
     font-size: 20px;
     font-weight: 600;
   }
-  h4 {
-    font-size: 24px;
-    font-weight: 600;
-    padding-bottom: 8px;
-  }
-  h6 {
-    font-size: 16px;
-    font-weight: 100;
+  .founder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 24px 0 24px 0;
+    h4 {
+      font-size: 24px;
+      font-weight: 600;
+      padding-bottom: 8px;
+    }
+    h6 {
+      font-size: 16px;
+      font-weight: 100;
 
-    color: #d1d1d1;
-  }
-  p {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    padding-bottom: 24px;
-  }
-  button {
-    width: 90%;
+      color: #d1d1d1;
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      padding-bottom: 24px;
+    }
+    @media (max-width: 768px) {
+      h4 {
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 19px;
+        letter-spacing: 1px;
+      }
+      h6 {
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
+    }
   }
 
   @media (max-width: 768px) {
@@ -40,42 +55,5 @@
       line-height: 17px;
       padding: 0 8px;
     }
-
-    button {
-      padding: 8px 64px;
-      align-items: center;
-      font-size: 12px;
-      text-align: center;
-    }
   }
-}
-.founder {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
-  padding: 24px 0 24px 0;
-
-  @media (max-width: 768px) {
-    h4 {
-      font-size: 16px;
-      font-weight: 100;
-      line-height: 19px;
-      letter-spacing: 1px;
-    }
-    h6 {
-      font-size: 14px;
-      font-weight: 200;
-      line-height: 20px;
-      letter-spacing: 1px;
-    }
-  }
-}
-
-.founderContainer {
-  display: flex;
-  width: 400px;
-  aspect-ratio: 1;
-  // background-color: red;
-  position: relative;
 }

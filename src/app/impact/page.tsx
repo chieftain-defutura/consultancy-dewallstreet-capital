@@ -5,6 +5,7 @@ import Founder from "./component/FounderSlider";
 import Company from "./component/company";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 const Impacts = () => {
   return (
     <>
@@ -43,7 +44,7 @@ const Impacts = () => {
           <div className={styles.border_bottom}></div>
           <Company />
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 };
