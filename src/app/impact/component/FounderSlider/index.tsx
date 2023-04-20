@@ -102,7 +102,8 @@ const Founder: React.FC = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoPlay: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   return (
